@@ -1,24 +1,194 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
-}
-/* avatar box */
-
-.box{
-    margin: auto;
+    box-sizing: border-box;  
+    font-family: 'Open Sans', sans-serif;  
 }
 
-.sesume{
+:root{
+    --h-one: 'Fascinate Inline', cursive;
+    --titre: ;
+    --color-one: #487473;
+    --color-two: #5BC673;
+    --color-three: #a52a2a;
+    --normal-text: 'Open Sans', sans-serif;
+}
+
+.resume{
     max-width: 1280px;
     height: 1600px;
     position: relative;
     margin-right: 5vh;
     margin-left: 5vh;
     margin-bottom: 0;
-    background-color: salmon;
+    background-color:#FFC966;
     border-radius: 1em;
 }
+
+/* header */
+
+.frist-nav{
+    max-width: 1280px;
+    height: 55px;
+    background-color: var(--color-one) ;
+    border-radius: 1em 1em 0 0;
+    padding-left: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.6em;
+    border: 1px solid black;
+}
+.windows-header-icon{
+    position: relative;
+    bottom: 0.6em;
+}
+
+.name-nav{
+    font-size: 1.7em;
+    font-weight: bold;
+    font-family: var(--h-one);
+    color: #fff;
+}
+.logo{
+    width: 35px;
+}
+.second-nav{
+    max-width: 1280px;
+    height: 40px;
+    border: 1px solid black;
+    border-top: 0;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: var(--color-two);
+
+}
+
+.icon-second-nav{
+    width: 40px;
+    margin-left: 1.2em;
+    padding-right: 0.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ability{
+margin-left: 1.5em;
+display: flex;
+align-items: center;
+font-size: 1em;
+font-family: var(--normal-text);
+
+}
+.label-style{
+    font-size: 1em;
+    margin-right: 0.25em;
+        
+}
+.input-style{
+height: 25px;
+border-radius: 0.3em;
+padding: 0.3em;
+background-color:palegreen;
+}
+
+/* left bar */
+
+.toolsbar{
+    width: 35px;
+    height: 420px;
+    position: absolute;
+   }
+
+.tools-item{
+    width: 35px;
+    height: 35px;
+    background-color: var(--color-two);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
+}
+
+.image-tools-item{
+    width: 20px;
+  
+}
+.image-tools-item2{
+    width: 14px;
+  
+}
+.image-tools-item3{
+    width: 16px;
+  
+}
+.image-tools-item4{
+    width: 18px;
+  
+}
+.image-tools-item5{
+    width: 24px;
+  
+}
+
+.windows-nav2-icon{
+    width: 24px;
+    margin: 0.15em;
+    
+ }
+ .windows-nav2-icon2{
+    width: 15px;
+    margin: 0.15em;
+    
+ }
+
+.tools-item-style2{
+    width: 35px;
+    height: 70px;
+    background-color: var(--color-two);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-corner{
+    width: 0.2em;
+    height: 0.2em;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* right bar */
+
+.setting-bar{
+    width: 35px;
+    height: 270px;
+    position: absolute;
+    right: 0;
+   
+}
+.setting-item{
+    width: 35px;
+    height: 45px;
+    background-color: var(--color-two);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* avatar box */
+
 
 .my-photo{
     width: 300px;
@@ -486,136 +656,8 @@ bottom: 0.6em;
     left: 2%;
 }
 
-/* header */
-
-header{
-    max-width: 1280px;
-    height: 82px;
-    position: absolute;
-}
-.frist-nav{
-    max-width: 1280px;
-    height: 45px;
-    background-color: skyblue;
-    border-radius: 1em 1em 0 0;
-    padding-left: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 1px -1px 40px  rgba(0,0,0,0.6) inset;
-}
-.name-nav{
-    font-size: 2em;
-    font-weight: bold;
-}
-.logo{
-    width: 35px;
-}
-.second-nav{
-    max-width: 1280px;
-    height: 40px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    background-color: skyblue;
 
 
-}
-
-.icon-second-nav{
-    width: 40px;
-    margin-left: 20px;
-    padding-right: 10px;
-    border-right: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.Ability{
-margin-left: 30px;
-display: flex;
-align-items: center;
-
-}
-.label-style{
-    font-size: 1em;
-    margin-right: 4px;
-    
-}
-.input-style{
-height: 25px;
-border-radius: 5px;
-padding: 5px;
-}
-
-/* left bar */
-.toolsbar{
-    width: 35px;
-    height: 420px;
-    position: absolute;
-    left: 0;
-    top: 84px;
-}
-.tools-item{
-    width: 35px;
-    height: 35px;
-    background-color: skyblue;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    
-    
-}
-.image-tools-item{
-    width: 10px;
-    height: 5px;
-    background-color: #000;
-    
-     
-}
-.tools-item-style2{
-    width: 35px;
-    height: 70px;
-    background-color: skyblue;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.black-corner{
-    width: 4px;
-    height: 4px;
-    background-color: red;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-/* right bar */
-
-.setting-bar{
-    width: 35px;
-    height: 210px;
-    position: absolute;
-    right: 0;
-    top: 84px;
-}
-.setting-item{
-    width: 35px;
-    height: 35px;
-    background-color: skyblue;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;  
-}
 
 /* positions */
 
@@ -668,4 +710,7 @@ padding: 5px;
     position: absolute;   
     right: 15vw;
     top: 600px;
+}
+header{
+    position: relative;
 }
