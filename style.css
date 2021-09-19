@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+/* avatar box */
+
+.box{
+    margin: auto;
+}
+
+.my-photo{
+    width: 300px;
+    height: 300px;
+  
+}
+
+.size-icon{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+
+.style-box {
+    box-shadow: -5px 5px rgba(255,0,0,0.4);
+    background-color: skyblue;
+    border-radius: 0.6em;
+    margin: 50% auto;
+    border: 1px solid black;
+    position: relative;
+}
+
+.parent-scroll{
+    overflow-x: scroll;
+    overflow-y: scroll;
+    border: 1px solid black;
+    border-radius: 0.6em;
+    position: absolute;
+   
+}
+
+.parent-scroll-main{
+    width: 280px;
+    height: 250px;
+    bottom: 0.6em;
+    left: 4%;
+}
+
+.box-title{
+font-size: 1em;
+font-weight: bold;
+position: absolute;
+left: 0;
+top: 0;
+margin: 0.6em;
+}
+
+.windows-icon{
+   width: 24px;
+   margin: 3px;
+   margin-top: 0.5em;
+}
+
+.avatar{
+    width: 250px;
+    position: absolute;
+    top: -0.6em;
+    left: 0;
+  }
+
+.scroll{
+      height: 600px;
+      width: 600px;
+      position: relative;
+
+    }
+  
+.parent-scroll::-webkit-scrollbar{
+    width: 16px;
+
+       }
+  
+.parent-scroll::-webkit-scrollbar-track{
+    /* -webkit-box-shadow: inset 0 0 6px black; */
+    border-radius: 0 ;
+    background-color: #d5f1de;
+    border: 1px solid black;
+}
+
+.parent-scroll::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 0 6px black;
+    background-color: skyblue;
+    border: 1px solid black;
+}
+
+.parent-scroll::-webkit-scrollbar-corner{
+    background-color: skyblue;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+/* .my-photo::-webkit-scrollbar-thumb:hover {
+    background: #f6f869;
+    border-radius: 10px
+
+}
+.my-photo::-webkit-scrollbar-thumb:active {
+    background: #20b456;
+    border-radius: 10px;
+}
+
+.my-photo:hover{
+   background-color: slateblue;
+} */
+
+/* About me */
+
+.scroll-avatar-box1{
+    max-width: 550px;
+    height: 200px;
+  
+}
+.scroll-avatar-box2{
+max-width: 530px;
+height: 150px;
+bottom: 0.6em;
+    left: 2%;
+}
+
+.text-align{
+    max-width: 520px;
+    padding-top: 0.7em;
+    padding-left: 0.7em;
+    padding-right:1.5em;em;
+
+}
+.about-me{
+    font-size: 1em;
+    margin-top: 0.4em;
+    text-align: justify;
+}
+
+/* language */
+.scroll-language-box1{
+    width: 250px;
+    height: 200px;
+}
+.scroll-language-box2{
+    max-width: 230px;
+    height: 150px;
+    bottom: 0.5em;
+        left: 5%;
+}
+.scroll-language-box3{
+    position: relative;
+}
+.language-bar{
+font-size: 1.2em;
+}
+
+.language-range1{
+    width: 120px;
+    height: 20px;
+    border-radius: 1em 0 0 1em;
+    margin: 7px 0;
+    background-color: green;
+    position: absolute;
+    border: 1px solid black;
+}
+.language-range2, .language-range4{
+    width: 150px;
+    height: 20px;
+    border-radius: 1em;
+    margin: 7px 0;
+    border: 1px solid black;
+
+ 
+}
+
+.language-range3{
+    width: 150px;
+    height: 20px;
+    border-radius: 1em;
+    margin: 7px 0;
+    background-color: green;
+    position: absolute;
+    border: 1px solid black;
+}
+
+/* skills */
+
+.scroll-skills-box1{
+width: 250px;
+height: 400px;
+}
+
+.scroll-skills-box2{
+    max-width: 230px;
+    height: 350px;
+    bottom: 0.6em;
+        left: 4%;
+    }
+
+.skill{
+    position: relative;
+}
+
+.skilltext{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.frontend{
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.graphics{
+    width: 150px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+/* social media */
+
+.social-media-icon{
+    width: 70px;
+    height: 70px;
+    box-shadow: -5px 5px rgba(255,0,0,0.4);
+    background-color: skyblue;
+    border-radius: 0.6em;
+    border: 1px solid black;
+    position: relative;
+}
+.social-media-id{
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    box-shadow: -5px 5px rgba(255,0,0,0.4);
+    background-color: skyblue;
+    border-radius: 0.6em;
+    border: 1px solid black;
+    position: absolute;
+    z-index: -1;
+    top: 18px;
+    left: 65px;
+    
+}
+.social-header{
+    position: relative;
+}
+.social-header-icon-left{
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px;
+}
+.social-header-icon-right{
+    width: 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 4px;
+}
+
+
+.linkedin-icon{
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  top: 13px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+    
+}
+.seperate{
+    width: 70px;
+    height: 53px;
+    border-top: 1px solid black;
+    border-radius: 0 0 0.6em 0.6em;
+    position: absolute;
+    bottom: 0;
+}
+
+.social-title{
+
+}
+
+.box-icon1{
+    width: 15px;
+    
+}
+.box-icon2{
+    width: 10px;
+    margin-right: 5px;
+}
+.size-icon{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.social-title{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 8px;
+    font-size: 1em;
+    border-right: 1px solid black;
+    width: 100px;
+    
+}
+.seperate2{
+    width: 198px;
+    height: 51px;
+    border-top: 1px solid black;
+    border-radius: 0 0 0.6em 0.6em;
+    position: absolute;
+    bottom: 0;
+}
+
+.color-set{
+    background-color: rgba(0,0,0,0.2);
+    width: 90px;
+    height: 17px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+
+.Twice-box{
+    display: flex;
+    position: relative;
+       
+}
+.id-social{
+font-size: 1.2em;
+font-weight: bold;
+
+}
+.background-color{
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    right: 20%;
+    bottom: 10%;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.6);
+    
+}
+
+/* Biography */
+.style-bio {
+    box-shadow: -5px 5px rgba(255,0,0,0.4);
+    background-color: skyblue;
+    border-radius: 0.6em 0 0 0.6em;
+    margin: 50% auto;
+    border: 1px solid black;
+    position: relative;
+}
+
+.experirnce{
+    width: 300px;
+    height: 300px;
+}
+.box-icon3{
+    width: 20px;
+    margin: 2px;
+}
+.bio-header{
+    background-color: rgba(0,0,0,0.4);
+    width: 300px;
+    height: 35px;
+    position: absolute;
+    border-radius: 6px 0 0 0;
+    right: 0;
+    top: 0;
+    
+}
+
+.bio-footer{
+    background-color: rgba(0,0,0,0.4);
+    width: 300px;
+    height: 20px;
+    position: absolute;
+    border-radius: 0 0 0 6px;
+    bottom: 0;
+    right: 0;
+}
+
+ .bio-rows{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    
+}
+.bio-rows1{
+    top: 35px;
+}
+.bio-rows2{
+    top: 70px;
+}
+.bio-rows3{
+    top: 105px;
+}
+.bio-rows4{
+    top: 140px;
+}
+.bio-rows5{
+    top: 175px;
+}
+
+.eyes{
+    width: 25px;
+    height: 35px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eyes-icon{
+    width: 10px;
+    height: 15px;
+    background-color: red;
+}
+.position{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 274px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+
+}
+.bio-icon{
+    width: 25px;
+    height: 15px;
+    background-color: red;
+    margin: 3px;
+}
+.bio-text{
+margin-left: 5px;
+font-size: 1em;
+
+}
+
+/* portfolio */
+
+.scroll-portfolio-box1{
+    max-width: 550px;
+    height: 350px;
+  
+}
+.scroll-portfolio-box2{
+max-width: 530px;
+height: 300px;
+bottom: 0.6em;
+    left: 2%;
+}
