@@ -439,25 +439,21 @@ line-height: 12px;
             left: 4%;
         }
     
-    .skill{
-        position: relative;
-    }
-    
-    .skilltext{
-        font-size: 24px;
+       .skilltext{
+        font-size: 1.5em;
         font-weight: bold;
-        margin-bottom: 10px;
+        margin-bottom: 0.6em;
         margin-left: 20px;
     }
     
     .frontend{
         width: 180px;
-        margin-bottom: 10px;
+        margin-bottom: 0.6em;
     }
     
     .graphics{
         width: 150px;
-        margin-bottom: 10px;
+        margin-bottom: 0.6em;
         margin-left: 20px;
     }
     
@@ -484,8 +480,8 @@ font-size: 1.2em;
     width: 120px;
     height: 20px;
     border-radius: 1em 0 0 1em;
-    margin: 7px 0;
-    background-color: green;
+    margin: 0.4em 0;
+    background-color:var(--color-one);
     position: absolute;
     border: 1px solid black;
 }
@@ -493,7 +489,7 @@ font-size: 1.2em;
     width: 150px;
     height: 20px;
     border-radius: 1em;
-    margin: 7px 0;
+    margin: 0.4em 0;
     border: 1px solid black;
 }
 
@@ -501,8 +497,8 @@ font-size: 1.2em;
     width: 150px;
     height: 20px;
     border-radius: 1em;
-    margin: 7px 0;
-    background-color: green;
+    margin: 0.4em 0;
+    background-color: var(--color-one);
     position: absolute;
     border: 1px solid black;
 }
@@ -515,17 +511,18 @@ font-size: 1.2em;
     width: 70px;
     height: 70px;
     box-shadow: -0.3em 0.3em rgba(255,0,0,0.4);
-    background-color: skyblue;
+    background-color: var(--color-two);
     border-radius: 0.6em;
     border: 1px solid black;
-    position: relative;
+    position: absolute;
+    z-index: 2;
 }
 .social-media-id{
     width: 200px;
     height: 70px;
     text-align: center;
     box-shadow: -0.3em 0.3em rgba(255,0,0,0.4);
-    background-color: skyblue;
+    background-color: var(--color-two);
     border-radius: 0.6em;
     border: 1px solid black;
     position: absolute;
@@ -542,21 +539,19 @@ font-size: 1.2em;
     position: absolute;
     left: 0;
     top: 0;
-    margin: 4px;
+    margin: 0.3em;
 }
 .social-header-icon-right{
     width: 8px;
     position: absolute;
     right: 0;
     top: 0;
-    margin: 4px;
+    margin: 0.3em;
 }
 
 
 .linkedin-icon{
   width: 40px;
-  height: 40px;
-  background-color: red;
   position: absolute;
   top: 13px;
   bottom: 0;
@@ -566,16 +561,13 @@ font-size: 1.2em;
     
 }
 .seperate{
-    width: 70px;
+    width: 68px;
     height: 53px;
     border-top: 1px solid black;
     border-radius: 0 0 0.6em 0.6em;
     position: absolute;
     bottom: 0;
-}
-
-.social-title{
-
+    background-color: var(--color-one);
 }
 
 .box-icon1{
@@ -598,7 +590,7 @@ font-size: 1.2em;
     left: 0;
     top: 0;
     margin-left: 8px;
-    font-size: 1em;
+    font-size: 0.8em;
     border-right: 1px solid black;
     width: 100px;
     
@@ -613,7 +605,7 @@ font-size: 1.2em;
 }
 
 .color-set{
-    background-color: rgba(0,0,0,0.2);
+    background-color: var(--color-six);
     width: 90px;
     height: 17px;
     position: absolute;
@@ -630,9 +622,13 @@ font-size: 1.2em;
        
 }
 .id-social{
-font-size: 1.2em;
+font-size: 1em;
 font-weight: bold;
 
+}
+.link-to-media{
+    text-decoration: none;
+    color: black;
 }
 .background-color{
     width: 120px;
@@ -686,7 +682,7 @@ bottom: 0.6em;
 .skills-box{
     position: relative;
     left: 60px;
-    top: 1000px;
+    top: 700px;
 
 }
 .social-media-linkedin-box{
