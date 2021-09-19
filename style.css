@@ -11,11 +11,19 @@
     --color-one: #487473;
     --color-two: #5BC673;
     --color-three: #a52a2a;
+    --color-four: skyblue;
+    --color-five: palegreen;
+    --color-six: #0BCF94;
     --normal-text: 'Open Sans', sans-serif;
 }
 
+body{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 .resume{
-    max-width: 1280px;
+    max-width: 1100px;
     height: 1600px;
     position: relative;
     margin-right: 5vh;
@@ -28,7 +36,7 @@
 /* header */
 
 .frist-nav{
-    max-width: 1280px;
+    max-width: 1100px;
     height: 55px;
     background-color: var(--color-one) ;
     border-radius: 1em 1em 0 0;
@@ -54,7 +62,7 @@
     width: 35px;
 }
 .second-nav{
-    max-width: 1280px;
+    max-width: 1100px;
     height: 40px;
     border: 1px solid black;
     border-top: 0;
@@ -91,7 +99,7 @@ font-family: var(--normal-text);
 height: 25px;
 border-radius: 0.3em;
 padding: 0.3em;
-background-color:palegreen;
+background-color:var(--color-five);
 }
 
 /* left bar */
@@ -111,8 +119,17 @@ background-color:palegreen;
     justify-content: center;
     align-items: center;
     position: relative;
-    
-    
+       
+}
+.tools-item-selected{
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .image-tools-item{
@@ -200,14 +217,13 @@ background-color:palegreen;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    margin-right: 5px;
+    margin-right: 0.3em;
 }
 
 .style-box {
-    box-shadow: -5px 5px rgba(255,0,0,0.4);
-    background-color: skyblue;
+    box-shadow: -0.3em 0.3em rgba(255,0,0,0.4);
+    background-color: var(--color-one);
     border-radius: 0.6em;
-    margin: 50% auto;
     border: 1px solid black;
     position: relative;
 }
@@ -218,6 +234,7 @@ background-color:palegreen;
     border: 1px solid black;
     border-radius: 0.6em;
     position: absolute;
+    background-color: var(--color-two);
    
 }
 
@@ -225,7 +242,7 @@ background-color:palegreen;
     width: 280px;
     height: 250px;
     bottom: 0.6em;
-    left: 4%;
+    left: 3%;
 }
 
 .box-title{
@@ -234,20 +251,21 @@ font-weight: bold;
 position: absolute;
 left: 0;
 top: 0;
-margin: 0.6em;
+margin: 0.4em 0.8em;
+color: #fff;
 }
 
 .windows-icon{
    width: 24px;
-   margin: 3px;
+   margin: 0.125em;
    margin-top: 0.5em;
 }
 
 .avatar{
-    width: 250px;
+    width: 230px;
     position: absolute;
-    top: -0.6em;
-    left: 2%;
+    top: 0.6em;
+    left: 15px;
   }
 
 .scroll{
@@ -262,44 +280,34 @@ margin: 0.6em;
 
        }
   
-.parent-scroll::-webkit-scrollbar-track{
-    /* -webkit-box-shadow: inset 0 0 6px black; */
+.parent-scroll::-webkit-scrollbar-track:horizontal{
     border-radius: 0 ;
     background-color: #d5f1de;
+    border: 1px solid rgb(199, 189, 189);
+    border-radius: 0 0 0 9px;
+}
+.parent-scroll::-webkit-scrollbar-track:vertical{
+    border-radius: 0 ;
+    background-color: #d5f1de;
+    border: 1px solid rgb(199, 189, 189);
+    border-radius: 0 9px 0 0;
+}
+
+.parent-scroll::-webkit-scrollbar-thumb{
+    border-radius: 0.6em;
+    -webkit-box-shadow: inset 0 0 6px black;
+    background-color: var(--color-one);
     border: 1px solid black;
 }
 
-.parent-scroll::-webkit-scrollbar-thumb {
-    border-radius: 0;
-    -webkit-box-shadow: inset 0 0 6px black;
-    background-color: skyblue;
-    border: 1px solid black;
-}
 
 .parent-scroll::-webkit-scrollbar-corner{
-    background-color: skyblue;
-    border-radius: 5px;
+    background-color: var(--color-one);
+    border-radius: 0.3em;
     border: 1px solid black;
 }
 
-
-/* .my-photo::-webkit-scrollbar-thumb:hover {
-    background: #f6f869;
-    border-radius: 10px
-
-}
-.my-photo::-webkit-scrollbar-thumb:active {
-    background: #20b456;
-    border-radius: 10px;
-}
-
-.my-photo:hover{
-   background-color: slateblue;
-} */
-
 /* About me */
-
-
 
 .scroll-avatar-box1{
     width: 550px;
@@ -307,14 +315,14 @@ margin: 0.6em;
   
 }
 .scroll-avatar-box2{
-max-width: 530px;
+width: 530px;
 height: 150px;
 bottom: 0.6em;
     left: 2%;
 }
 
 .text-align{
-    max-width: 520px;
+    width: 520px;
     padding-top: 0.7em;
     padding-left: 0.7em;
     padding-right:1.5em;
@@ -326,13 +334,141 @@ bottom: 0.6em;
     text-align: justify;
 }
 
+/* experirnce */
+
+.style-bio {
+    box-shadow: -0.3em 0.3em rgba(255,0,0,0.4);
+    background-color: var(--color-two);
+    border-radius: 0.6em 0 0 0.6em;
+    border: 1px solid black;
+    position: relative;
+}
+
+.experirnce{
+    width: 300px;
+    height: 300px;
+}
+.box-icon3{
+    width: 20px;
+    margin: 2px;
+}
+.bio-header{
+    background-color: var(--color-one);
+    width: 298px;
+    height: 35px;
+    position: absolute;
+    border-radius: 0.6em 0 0 0;
+    right: 0;
+    top: 0;
+}
+
+.bio-footer{
+    background-color: var(--color-one);
+    width: 298px;
+    height: 20px;
+    position: absolute;
+    border-radius: 0 0 0 0.6em;
+    bottom: 0;
+    right: 0;
+}
+
+ .bio-rows{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+.bio-rows1{
+    top: 35px;
+}
+.bio-rows2{
+    top: 70px;
+}
+.bio-rows3{
+    top: 105px;
+}
+.bio-rows4{
+    top: 140px;
+}
+.bio-rows5{
+    top: 175px;
+}
+
+.eyes{
+    width: 25px;
+    height: 35px;
+    border: 1px solid black;
+    border-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eyes-icon{
+    width: 15px;
+}
+.position{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 274px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+
+}
+.bio-icon{
+    width: 29px;
+    background-color: red;
+    margin: 3px;
+}
+.bio-text{
+margin-left: 0.3em;
+font-size: 0.8em;
+line-height: 12px;
+}
+
+/* skills */
+
+.scroll-skills-box1{
+    width: 250px;
+    height: 400px;
+    }
+    
+    .scroll-skills-box2{
+        max-width: 230px;
+        height: 350px;
+        bottom: 0.6em;
+            left: 4%;
+        }
+    
+    .skill{
+        position: relative;
+    }
+    
+    .skilltext{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+    
+    .frontend{
+        width: 180px;
+        margin-bottom: 10px;
+    }
+    
+    .graphics{
+        width: 150px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+    
+
 /* language */
 .scroll-language-box1{
     width: 250px;
     height: 200px;
 }
 .scroll-language-box2{
-    max-width: 230px;
+    width: 230px;
     height: 150px;
     bottom: 0.5em;
         left: 5%;
@@ -359,8 +495,6 @@ font-size: 1.2em;
     border-radius: 1em;
     margin: 7px 0;
     border: 1px solid black;
-
- 
 }
 
 .language-range3{
@@ -373,48 +507,14 @@ font-size: 1.2em;
     border: 1px solid black;
 }
 
-/* skills */
 
-.scroll-skills-box1{
-width: 250px;
-height: 400px;
-}
-
-.scroll-skills-box2{
-    max-width: 230px;
-    height: 350px;
-    bottom: 0.6em;
-        left: 4%;
-    }
-
-.skill{
-    position: relative;
-}
-
-.skilltext{
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
-
-.frontend{
-    width: 180px;
-    margin-bottom: 10px;
-}
-
-.graphics{
-    width: 150px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
 
 /* social media */
 
 .social-media-icon{
     width: 70px;
     height: 70px;
-    box-shadow: -5px 5px rgba(255,0,0,0.4);
+    box-shadow: -0.3em 0.3em rgba(255,0,0,0.4);
     background-color: skyblue;
     border-radius: 0.6em;
     border: 1px solid black;
@@ -424,7 +524,7 @@ height: 400px;
     width: 200px;
     height: 70px;
     text-align: center;
-    box-shadow: -5px 5px rgba(255,0,0,0.4);
+    box-shadow: -0.3em 0.3em rgba(255,0,0,0.4);
     background-color: skyblue;
     border-radius: 0.6em;
     border: 1px solid black;
@@ -484,7 +584,7 @@ height: 400px;
 }
 .box-icon2{
     width: 10px;
-    margin-right: 5px;
+    margin-right: 0.3em;
 }
 .size-icon{
     display: flex;
@@ -545,102 +645,6 @@ font-weight: bold;
     
 }
 
-/* Biography */
-.style-bio {
-    box-shadow: -5px 5px rgba(255,0,0,0.4);
-    background-color: skyblue;
-    border-radius: 0.6em 0 0 0.6em;
-    margin: 50% auto;
-    border: 1px solid black;
-    position: relative;
-}
-
-.experirnce{
-    width: 300px;
-    height: 300px;
-}
-.box-icon3{
-    width: 20px;
-    margin: 2px;
-}
-.bio-header{
-    background-color: rgba(0,0,0,0.4);
-    width: 300px;
-    height: 35px;
-    position: absolute;
-    border-radius: 6px 0 0 0;
-    right: 0;
-    top: 0;
-    
-}
-
-.bio-footer{
-    background-color: rgba(0,0,0,0.4);
-    width: 300px;
-    height: 20px;
-    position: absolute;
-    border-radius: 0 0 0 6px;
-    bottom: 0;
-    right: 0;
-}
-
- .bio-rows{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    
-}
-.bio-rows1{
-    top: 35px;
-}
-.bio-rows2{
-    top: 70px;
-}
-.bio-rows3{
-    top: 105px;
-}
-.bio-rows4{
-    top: 140px;
-}
-.bio-rows5{
-    top: 175px;
-}
-
-.eyes{
-    width: 25px;
-    height: 35px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.eyes-icon{
-    width: 10px;
-    height: 15px;
-    background-color: red;
-}
-.position{
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    width: 274px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-
-}
-.bio-icon{
-    width: 25px;
-    height: 15px;
-    background-color: red;
-    margin: 3px;
-}
-.bio-text{
-margin-left: 5px;
-font-size: 1em;
-
-}
 
 /* portfolio */
 
@@ -664,20 +668,25 @@ bottom: 0.6em;
 .avatar-box{
     position: absolute;
     left: 60px;
-    top: 0;
+    top: 150px;
     z-index: 2;
 }
 .about-me-box{
     position: absolute;
     z-index: 1;
-    right: 50px;
-    top: -170px;
+    right: 45px;
+    top: 100px;
+}
+.experirnce-box{
+    position: absolute;
+    top: 320px;
+    right: 34px;
 }
 
 .skills-box{
     position: relative;
-    top: 400px;
-    right: 0;
+    left: 60px;
+    top: 1000px;
 
 }
 .social-media-linkedin-box{
@@ -696,21 +705,31 @@ bottom: 0.6em;
     top: 670px;
     left: 75px;
 }
-.experirnce-box{
-    position: absolute;
-    top: 180px;
-    right: 42px;
-}
+
 .language-box{
     position: absolute;
-    top: 540px;
+    top: 840px;
     right: 62px;
 }
 .portfolio-box{
     position: absolute;   
     right: 15vw;
-    top: 600px;
+    top: 1200px;
 }
 header{
     position: relative;
 }
+
+
+
+
+
+/* .social-media-linkedin-box,
+
+.social-media-github-box,
+.social-media-figma-box,
+{
+    position: absolute;   
+    right: 0;
+    top: 0;
+} */
