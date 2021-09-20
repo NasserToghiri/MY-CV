@@ -270,11 +270,20 @@ color: #fff;
   }
 
 .scroll{
-      height: 600px;
       width: 600px;
+      height: 600px;
       position: relative;
 
     }
+    .scroll2{
+        width: 400px;
+        height: 400px;
+        position: relative;
+  
+      }
+     
+    
+    
   
 .parent-scroll::-webkit-scrollbar{
     width: 16px;
@@ -311,19 +320,25 @@ color: #fff;
 /* About me */
 
 .scroll-avatar-box1{
-    width: 550px;
+    width: 500px;
     height: 200px;
   
 }
 .scroll-avatar-box2{
-width: 530px;
+width: 480px;
 height: 150px;
 bottom: 0.6em;
     left: 2%;
 }
+.scroll3{
+    width: 500px;
+    height: 350px;
+    position: relative;
+
+  }
 
 .text-align{
-    width: 520px;
+    width: 470px;
     padding-top: 0.7em;
     padding-left: 0.7em;
     padding-right:1.5em;
@@ -333,6 +348,16 @@ bottom: 0.6em;
     font-size: 1em;
     margin-top: 0.4em;
     text-align: justify;
+}
+.about-me-bolder{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.about-me-bold{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 1em 0;
 }
 
 /* experience */
@@ -468,10 +493,14 @@ line-height: 12px;
     width: 230px;
     height: 150px;
     bottom: 0.5em;
-        left: 5%;
+        left: 4%;
 }
+
+
 .scroll-language-box3{
     position: relative;
+    width: 150px;
+    height: 210px;
 }
 .language-bar{
 font-size: 1.2em;
@@ -503,6 +532,49 @@ font-size: 1.2em;
     position: absolute;
     border: 1px solid black;
 }
+
+/* certificate */
+.scroll-certificate-box1{
+    width: 270px;
+    height: 280px;
+    box-shadow: -0.3em 0.3em rgba(255,0,0,0.4);
+    background-color: var(--color-one);
+    border-radius: 0.6em;
+    border: 1px solid black;
+    position: relative;
+}
+.scroll-certificate-box2{
+    width: 250px;
+    height: 230px;
+    bottom: 0.5em;
+        left: 4%;
+}
+
+.scroll-certificate-box3{
+    position: relative;
+    width: 150px;
+    height: 210px;
+}
+.text-align{
+    padding-top: 0.7em;
+    padding-left: 0.7em;
+    padding-right:1.5em;
+
+}
+.certificate-title{
+    font-size: 0.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.certificate{
+    width: 200px;
+}
+.certifacate-description{
+    font-size: 0.9em;
+    
+}
+
 
 
 
@@ -822,6 +894,12 @@ border-radius:  0.6em 0.6em 0 0;
     top: 1890px;
     left: 10px;
     z-index: 4;
+}
+
+.certificate-box {
+position: absolute; 
+top: 2000px;  
+left: 30px;
 }
 .portfolio-box{
     position: absolute;   
