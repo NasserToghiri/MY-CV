@@ -20,7 +20,8 @@
 
 body{
     max-width: 1100px;
-    margin: 0 auto;
+   margin: 20px auto;
+    
 }
 
 .resume{
@@ -32,6 +33,7 @@ body{
     margin-bottom: 0;
     background-color:#FFC966;
     border-radius: 1em;
+    border: 1px solid black;
 }
 
 /* header */
@@ -45,7 +47,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0.6em;
     border: 1px solid black;
 }
 .windows-header-icon{
@@ -533,48 +534,6 @@ font-size: 1.2em;
     border: 1px solid black;
 }
 
-/* certificate */
-.scroll-certificate-box1{
-    width: 270px;
-    height: 280px;
-    box-shadow: -0.3em 0.3em rgba(255,0,0,0.4);
-    background-color: var(--color-one);
-    border-radius: 0.6em;
-    border: 1px solid black;
-    position: relative;
-}
-.scroll-certificate-box2{
-    width: 250px;
-    height: 230px;
-    bottom: 0.5em;
-        left: 4%;
-}
-
-.scroll-certificate-box3{
-    position: relative;
-    width: 150px;
-    height: 210px;
-}
-.text-align{
-    padding-top: 0.7em;
-    padding-left: 0.7em;
-    padding-right:1.5em;
-
-}
-.certificate-title{
-    font-size: 0.8em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.certificate{
-    width: 200px;
-}
-.certifacate-description{
-    font-size: 0.9em;
-    
-}
-
 
 
 
@@ -714,6 +673,50 @@ font-weight: bold;
     
 }
 
+/* certificate */
+.scroll-certificate-box1{
+    width: 270px;
+    height: 280px;
+    box-shadow: -0.3em 0.3em rgba(255,0,0,0.4);
+    background-color: var(--color-one);
+    border-radius: 0.6em;
+    border: 1px solid black;
+    position: relative;
+}
+
+.scroll-certificate-box2{
+    width: 250px;
+    height: 230px;
+    bottom: 0.5em;
+        left: 4%;
+}
+
+.scroll-certificate-box3{
+    position: relative;
+   
+}
+.text-align{
+    padding-top: 0.7em;
+    padding-left: 0.7em;
+    padding-right:1.5em;
+
+}
+.certificate-title{
+    font-size: 0.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.certificate{
+    width: 200px;
+}
+.certifacate-description{
+    font-size: 0.9em;
+    
+}
+
+
+
 
 /* portfolio */
 
@@ -777,9 +780,15 @@ bottom: 0.6em;
 
 .language-box{
     position: absolute;
-    top: 680px;
+    top: 650px;
     right: 62px;
     z-index: 4;
+}
+.certificate-box{
+    position: absolute;
+    top: 880px;
+    right: 62px;
+
 }
 .portfolio-box{
     position: absolute;   
@@ -797,7 +806,7 @@ header{
     .resume{
      
         background-color:greenyellow;
-        height: 2400px;
+        height: 2760px;
 
         
     }
@@ -891,20 +900,22 @@ border-radius:  0.6em 0.6em 0 0;
 
 .language-box{
     position: absolute;
-    top: 1890px;
+    top: 1900px;
     left: 10px;
     z-index: 4;
 }
 
-.certificate-box {
-position: absolute; 
-top: 2000px;  
-left: 30px;
+.certificate-box{
+    top: 2140px;
+    right: 6%;
+
 }
+
 .portfolio-box{
     position: absolute;   
     left: 10px;
-    top: 2110px;
+    top: 2460px;
+    
 }
 
 }
@@ -917,7 +928,7 @@ left: 30px;
     .resume{
      
         background-color:skyblue;
-        height: 2500px;
+        height: 2750px;
         
     }
 
@@ -1015,10 +1026,15 @@ left: 30px;
         left: 25%;
         z-index: 4;
     }
+    .certificate-box{
+        top: 2140px;
+        right: 6%;
+
+    }
     .portfolio-box{
         position: absolute;   
         left: 60px;
-        top: 2180px;
+        top: 2450px;
     }
 
 }
@@ -1027,14 +1043,14 @@ left: 30px;
     .resume{
      
         background-color:sienna;
-        height: 1500px;
+        height: 1750px;
 
         
     }
     .avatar-box{
         position: absolute;
-        left: 10vw;
-        top: 310px;
+        left: 9vw;
+        top: 350px;
         z-index: 2;
     }
     .about-me-box{
@@ -1051,37 +1067,43 @@ left: 30px;
     
     .skills-box{
         position: absolute;
-        right: 5vw;
         top: 650px;
+        right: 0;
+        z-index: 3;
     
     }
     .social-media-linkedin-box{
         position: absolute;
-        top: 620px;
-        left: 70px;
+        top: 690px;
+        left: 10%;
     }
     
     .social-media-github-box{
         position: absolute;
-        top: 700px;
-        left: 100px;
+        top: 810px;
+        left: 12%;
     }
     .social-media-figma-box{
         position: absolute;
-        top: 780px;
-        left: 75px;
+        top: 930px;
+        left: 10.5%;
     }
     
     .language-box{
         position: absolute;
-        top: 880px;
+        top: 1080px;
         left: 62px;
         z-index: 4;
+    }
+    .certificate-box{
+        top: 1070px;
+        right: 6%;
+
     }
     .portfolio-box{
         position: absolute;   
         left: 60px;
-        top: 1100px;
+        top: 1370px;
     }
 }
 
