@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
-    font-family: 'Open Sans', sans-serif;  
+    font-family: 'Open Sans', sans-serif; 
+    transition: 1s ease ; 
 }
 
 :root{
@@ -334,7 +335,7 @@ bottom: 0.6em;
     text-align: justify;
 }
 
-/* experirnce */
+/* experience */
 
 .style-bio {
     box-shadow: -0.3em 0.3em rgba(255,0,0,0.4);
@@ -663,14 +664,14 @@ bottom: 0.6em;
 
 .avatar-box{
     position: absolute;
-    left: 60px;
+    left: 110px;
     top: 150px;
     z-index: 2;
 }
 .about-me-box{
     position: absolute;
     z-index: 1;
-    right: 45px;
+    right: 105px;
     top: 100px;
 }
 .experirnce-box{
@@ -680,9 +681,9 @@ bottom: 0.6em;
 }
 
 .skills-box{
-    position: relative;
-    left: 60px;
-    top: 700px;
+    position: absolute;
+    left: 400px;
+    top: 350px;
 
 }
 .social-media-linkedin-box{
@@ -704,28 +705,306 @@ bottom: 0.6em;
 
 .language-box{
     position: absolute;
-    top: 840px;
+    top: 680px;
     right: 62px;
+    z-index: 4;
 }
 .portfolio-box{
     position: absolute;   
-    right: 15vw;
-    top: 1200px;
+    left: 100px;
+    top: 800px;
 }
+
 header{
     position: relative;
 }
 
+/* responsive */
 
+@media screen and (max-width:480px){
+    .resume{
+     
+        background-color:greenyellow;
+        height: 2400px;
 
+        
+    }
+/* about me responsive */
 
+.scroll-avatar-box1{
+    width: 280px;
+    height: 400px;
+  
+}
+.scroll-avatar-box2{
+    height: 350px;
+width: 274px;
+bottom: 0.6em;
+    left: 2%;
+}
 
-/* .social-media-linkedin-box,
+#text-align1{
+    width: 270px;
+  }
+/* remove left and right bar */
+.display{
+    display: none;
+}
 
-.social-media-github-box,
-.social-media-figma-box,
-{
+/* portfolio responsive */
+
+.scroll-portfolio-box1{
+width: 300px;
+height: 250px;
+
+}
+.scroll-portfolio-box2{
+width: 280px;
+height: 200px;
+bottom: 0.6em;
+left: 2%;
+}
+
+/* experience responsive */
+.style-bio {
+border-radius: 0.6em;
+}
+
+.bio-header{
+border-radius:  0.6em 0.6em 0 0;
+}
+
+/* position */
+.about-me-box{
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 100px;
+}
+.avatar-box{
+    position: absolute;
+    left: 10px;
+    top: 520px;
+    z-index: 2;
+}
+
+.experirnce-box{
+    position: absolute;
+    top: 840px;
+    left: 10px;
+}
+
+.skills-box{
+    position: absolute;
+    left: 10px;
+    top: 1160px;
+
+}
+.social-media-linkedin-box{
+    position: absolute;
+    top: 1580px;
+    left: 10px;
+}
+
+.social-media-github-box{
+    position: absolute;
+    top: 1680px;
+    left: 10px;
+}
+.social-media-figma-box{
+    position: absolute;
+    top: 1780px;
+    left: 10px;
+}
+
+.language-box{
+    position: absolute;
+    top: 1890px;
+    left: 10px;
+    z-index: 4;
+}
+.portfolio-box{
     position: absolute;   
-    right: 0;
-    top: 0;
-} */
+    left: 10px;
+    top: 2110px;
+}
+
+}
+
+
+
+
+@media screen and (min-width:480px) and (max-width:768px) {
+
+    .resume{
+     
+        background-color:skyblue;
+        height: 3000px;
+        
+    }
+
+    /* about me responsive */
+
+    .scroll-avatar-box1{
+        width: 300px;
+        height: 400px;
+      
+    }
+    .scroll-avatar-box2{
+        height: 350px;
+    width: 287px;
+    bottom: 0.6em;
+        left: 2%;
+    }
+    
+    #text-align1{
+        width: 270px;
+      }
+
+    /* remove left and right bar */
+    .display{
+        display: none;
+    }
+    
+    /* portfolio responsive */
+
+    .scroll-portfolio-box1{
+    width: 300px;
+    height: 250px;
+  
+    }
+    .scroll-portfolio-box2{
+    width: 280px;
+    height: 200px;
+    bottom: 0.6em;
+    left: 2%;
+    }
+
+  /* experience responsive */
+  .style-bio {
+    border-radius: 0.6em;
+    }
+
+    .bio-header{
+    border-radius:  0.6em 0.6em 0 0;
+    }
+    /* position */
+    .about-me-box{
+        position: absolute;
+        z-index: 1;
+        right: 20%;
+        top: 100px;
+    }
+    .avatar-box{
+        position: absolute;
+        left: 60px;
+        top: 520px;
+        z-index: 2;
+    }
+    
+    .experirnce-box{
+        position: absolute;
+        top: 840px;
+        right: 15%;
+    }
+    
+    .skills-box{
+        position: absolute;
+        left: 60px;
+        top: 1160px;
+    
+    }
+    .social-media-linkedin-box{
+        position: absolute;
+        top: 1580px;
+        left: 15%;
+    }
+    
+    .social-media-github-box{
+        position: absolute;
+        top: 1680px;
+        left: 20%;
+    }
+    .social-media-figma-box{
+        position: absolute;
+        top: 1780px;
+        left: 15%;
+    }
+    
+    .language-box{
+        position: absolute;
+        top: 1890px;
+        left: 25%;
+        z-index: 4;
+    }
+    .portfolio-box{
+        position: absolute;   
+        left: 60px;
+        top: 2110px;
+    }
+
+}
+@media screen and (min-width:768px) and (max-width:1100px){
+
+    .resume{
+     
+        background-color:sienna;
+        
+    }
+    .avatar-box{
+        position: absolute;
+        left: 10vw;
+        top: 310px;
+        z-index: 2;
+    }
+    .about-me-box{
+        position: absolute;
+        z-index: 1;
+        right: 10vw;
+        top: 100px;
+    }
+    .experirnce-box{
+        position: absolute;
+        top: 320px;
+        right: 34px;
+    }
+    
+    .skills-box{
+        position: absolute;
+        right: 5vw;
+        top: 650px;
+    
+    }
+    .social-media-linkedin-box{
+        position: absolute;
+        top: 620px;
+        left: 70px;
+    }
+    
+    .social-media-github-box{
+        position: absolute;
+        top: 700px;
+        left: 100px;
+    }
+    .social-media-figma-box{
+        position: absolute;
+        top: 780px;
+        left: 75px;
+    }
+    
+    .language-box{
+        position: absolute;
+        top: 880px;
+        left: 62px;
+        z-index: 4;
+    }
+    .portfolio-box{
+        position: absolute;   
+        left: 60px;
+        top: 1100px;
+    }
+}
+
+
+
+
