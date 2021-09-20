@@ -31,9 +31,16 @@ body{
     margin-right: 5vh;
     margin-left: 5vh;
     margin-bottom: 0;
-    background-color:#FFC966;
     border-radius: 1em;
-    border: 1px solid black;
+    border: 1px solid black;    
+    background-color:#FFC966;
+    background-image: linear-gradient(white 2px, transparent 2px),
+    linear-gradient(90deg, white 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+
 }
 
 /* header */
@@ -323,19 +330,19 @@ color: #fff;
 .scroll-avatar-box1{
     width: 500px;
     height: 200px;
-  
 }
+
 .scroll-avatar-box2{
 width: 480px;
 height: 150px;
 bottom: 0.6em;
     left: 2%;
 }
+
 .scroll3{
     width: 500px;
-    height: 350px;
+    height: 450px;
     position: relative;
-
   }
 
 .text-align{
@@ -343,13 +350,14 @@ bottom: 0.6em;
     padding-top: 0.7em;
     padding-left: 0.7em;
     padding-right:1.5em;
-
 }
+
 .about-me{
     font-size: 1em;
     margin-top: 0.4em;
     text-align: justify;
 }
+
 .about-me-bolder{
     font-weight: bold;
     font-size: 1.5em;
@@ -604,6 +612,7 @@ font-size: 1.2em;
 
 .box-icon1{
     width: 15px;
+    margin-right: 0.4em;
     
 }
 .box-icon2{
@@ -637,12 +646,15 @@ font-size: 1.2em;
 }
 
 .color-set{
-    background-color: var(--color-six);
+    background-color: var(--color-one);
     width: 90px;
     height: 17px;
     position: absolute;
     right: 0;
     top: 0;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0 0.6em 0 0;
     
 }
 
@@ -722,16 +734,25 @@ font-weight: bold;
 
 .scroll-portfolio-box1{
     width: 550px;
-    height: 350px;
+    height: 380px;
   
 }
 .scroll-portfolio-box2{
 width: 530px;
-height: 300px;
+height: 330px;
 bottom: 0.6em;
     left: 2%;
 }
+.scroll-portfolio-box3{
+    width: 600px;
+    height: 3100px;
+    position: relative;
+}
 
+.codepen{
+    height: 2900px; 
+    width: 490px;
+}
 
 
 
@@ -805,8 +826,7 @@ header{
 @media screen and (max-width:480px){
     .resume{
      
-        background-color:greenyellow;
-        height: 2760px;
+        height: 2800px;
 
         
     }
@@ -819,10 +839,16 @@ header{
 }
 .scroll-avatar-box2{
     height: 350px;
-width: 274px;
-bottom: 0.6em;
+    width: 274px;
+    bottom: 0.6em;
     left: 2%;
 }
+.scroll3{
+    width: 500px;
+    height: 550px;
+    position: relative;
+
+  }
 
 #text-align1{
     width: 270px;
@@ -836,14 +862,24 @@ bottom: 0.6em;
 
 .scroll-portfolio-box1{
 width: 300px;
-height: 250px;
+height: 300px;
 
 }
 .scroll-portfolio-box2{
 width: 280px;
-height: 200px;
+height: 250px;
 bottom: 0.6em;
 left: 2%;
+}
+   .scroll-portfolio-box3{
+    width: 400px;
+    height: 4700px;
+    position: relative;
+}
+
+.codepen{
+    height: 4670px; 
+    width: 240px;
 }
 
 /* experience responsive */
@@ -917,18 +953,14 @@ border-radius:  0.6em 0.6em 0 0;
     top: 2460px;
     
 }
-
 }
-
-
 
 
 @media screen and (min-width:480px) and (max-width:768px) {
 
     .resume{
      
-        background-color:skyblue;
-        height: 2750px;
+        height: 2780px;
         
     }
 
@@ -945,6 +977,22 @@ border-radius:  0.6em 0.6em 0 0;
     bottom: 0.6em;
         left: 2%;
     }
+    .scroll3{
+        width: 500px;
+        height: 550px;
+        position: relative;
+    
+      }
+       .scroll-portfolio-box3{
+        width: 600px;
+        height: 4100px;
+        position: relative;
+    }
+    
+    .codepen{
+        height: 3950px; 
+        width: 300px;
+    }
     
     #text-align1{
         width: 270px;
@@ -958,13 +1006,13 @@ border-radius:  0.6em 0.6em 0 0;
     /* portfolio responsive */
 
     .scroll-portfolio-box1{
-    width: 300px;
-    height: 250px;
+    width: 360px;
+    height: 300px;
   
     }
     .scroll-portfolio-box2{
-    width: 280px;
-    height: 200px;
+    width: 340px;
+    height: 260px;
     bottom: 0.6em;
     left: 2%;
     }
@@ -977,6 +1025,7 @@ border-radius:  0.6em 0.6em 0 0;
     .bio-header{
     border-radius:  0.6em 0.6em 0 0;
     }
+   
     /* position */
     .about-me-box{
         position: absolute;
@@ -1031,7 +1080,7 @@ border-radius:  0.6em 0.6em 0 0;
         right: 6%;
 
     }
-    .portfolio-box{
+    .portfolio-box {
         position: absolute;   
         left: 60px;
         top: 2450px;
@@ -1042,11 +1091,15 @@ border-radius:  0.6em 0.6em 0 0;
 
     .resume{
      
-        background-color:sienna;
         height: 1750px;
 
         
     }
+
+  
+
+
+
     .avatar-box{
         position: absolute;
         left: 9vw;
