@@ -25,7 +25,7 @@ body{
 
 .resume{
     max-width: 1100px;
-    height: 1600px;
+    height: 1200px;
     position: relative;
     margin-right: 5vh;
     margin-left: 5vh;
@@ -664,7 +664,7 @@ bottom: 0.6em;
 
 .avatar-box{
     position: absolute;
-    left: 110px;
+    left: 105px;
     top: 150px;
     z-index: 2;
 }
@@ -839,7 +839,7 @@ border-radius:  0.6em 0.6em 0 0;
     .resume{
      
         background-color:skyblue;
-        height: 3000px;
+        height: 2500px;
         
     }
 
@@ -933,14 +933,14 @@ border-radius:  0.6em 0.6em 0 0;
     
     .language-box{
         position: absolute;
-        top: 1890px;
+        top: 1910px;
         left: 25%;
         z-index: 4;
     }
     .portfolio-box{
         position: absolute;   
         left: 60px;
-        top: 2110px;
+        top: 2180px;
     }
 
 }
@@ -949,6 +949,8 @@ border-radius:  0.6em 0.6em 0 0;
     .resume{
      
         background-color:sienna;
+        height: 1500px;
+
         
     }
     .avatar-box{
